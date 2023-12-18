@@ -8,12 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var filter: String = ""
+    @State private var myLists = [UserList]()
+    @State private var isFormPresented = false
+
+
     var body: some View {
+
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "book")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack{
+                Button("Add Item") {
+                    isFormPresented.toggle()
+                }
+                .sheet(isPresented: $isFormPresented) {
+                    FormView(addItem: { newItem in
+                    myLists.append(newItem)
+                    isFormPresented.toggle()
+                    })
+                }
+                
+            }
+        
+            
+            NavigationStack{
+                List{
+                    Text("something")
+                    Text("idk")
+                }
+            }.searchable(text: $filter)
+            
+                
+            
+            
         }
         .padding()
     }
@@ -24,3 +54,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

@@ -14,6 +14,8 @@
 		842AC10F2B2E8F7C00ADB0FC /* ForLaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AC10E2B2E8F7C00ADB0FC /* ForLaterTests.swift */; };
 		842AC1192B2E8F7C00ADB0FC /* ForLaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AC1182B2E8F7C00ADB0FC /* ForLaterUITests.swift */; };
 		842AC11B2B2E8F7C00ADB0FC /* ForLaterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AC11A2B2E8F7C00ADB0FC /* ForLaterUITestsLaunchTests.swift */; };
+		84F3EB042B2F4E41002A9EB9 /* NewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3EB032B2F4E41002A9EB9 /* NewListView.swift */; };
+		84F3EB062B30CE88002A9EB9 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3EB052B30CE88002A9EB9 /* UserList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		842AC1142B2E8F7C00ADB0FC /* ForLaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForLaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842AC1182B2E8F7C00ADB0FC /* ForLaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForLaterUITests.swift; sourceTree = "<group>"; };
 		842AC11A2B2E8F7C00ADB0FC /* ForLaterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForLaterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84F3EB032B2F4E41002A9EB9 /* NewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListView.swift; sourceTree = "<group>"; };
+		84F3EB052B30CE88002A9EB9 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				842AC0FF2B2E8F7A00ADB0FC /* ContentView.swift */,
 				842AC1012B2E8F7C00ADB0FC /* Assets.xcassets */,
 				842AC1032B2E8F7C00ADB0FC /* Preview Content */,
+				84F3EB032B2F4E41002A9EB9 /* NewListView.swift */,
+				84F3EB052B30CE88002A9EB9 /* UserList.swift */,
 			);
 			path = ForLater;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F3EB062B30CE88002A9EB9 /* UserList.swift in Sources */,
 				842AC1002B2E8F7A00ADB0FC /* ContentView.swift in Sources */,
+				84F3EB042B2F4E41002A9EB9 /* NewListView.swift in Sources */,
 				842AC0FE2B2E8F7A00ADB0FC /* ForLaterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
