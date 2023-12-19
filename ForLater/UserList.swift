@@ -10,5 +10,5 @@ import Foundation
 struct UserList: Identifiable{
     var id = UUID()
     var name: String
-    var desciption: String
+    var description: String
 }

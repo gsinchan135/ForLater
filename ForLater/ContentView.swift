@@ -20,28 +20,31 @@ struct ContentView: View {
             Image(systemName: "book")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            HStack{
-                Button("Add Item") {
-                    isFormPresented.toggle()
-                }
-                .sheet(isPresented: $isFormPresented) {
-                    FormView(addItem: { newItem in
-                    myLists.append(newItem)
-                    isFormPresented.toggle()
-                    })
-                }
-                
-            }
         
             
             NavigationStack{
-                List{
-                    Text("something")
-                    Text("idk")
+                List(myLists){ UserList in
+                    VStack(alignment: .leading){
+                        Text(UserList.name)
+                            .font(.title)
+                        Text(UserList.description)
+                            .font(.subheadline)
+                                        }
                 }
             }.searchable(text: $filter)
             
-                
+            Button("Add Item") {
+                isFormPresented.toggle()
+            }
+            .sheet(isPresented: $isFormPresented) {
+                FormView(addItem: { newItem in
+                    myLists.append(newItem)
+                    isFormPresented.toggle()
+                }/*, onCancel: {
+                    isFormPresented.toggle()
+                })
+              )   */)
+            }
             
             
         }
